@@ -23,7 +23,7 @@ public class AddPetDaoImpl implements PetDao {
 	@Override
 	public String addPet(Pet pet, User user) {
 		String message = "Sucessfully Registered";
-		pet.setUser(user);
+		//pet.setUser(user);
 		Session session = factory.getCurrentSession();
 		if (session != null) {
 			session.save(pet);
